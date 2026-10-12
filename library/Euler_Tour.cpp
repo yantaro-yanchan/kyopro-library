@@ -14,7 +14,6 @@ auto dfs = [&](auto dfs, int now, int par) -> void {
 
         dist[next_v] = dist[now] + 1;
         dfs(dfs, next_v, now);
-        vec.push_back(now);
     }
     oud[now] = vec.size();
 };
