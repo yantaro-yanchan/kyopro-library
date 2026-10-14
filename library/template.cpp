@@ -5,6 +5,8 @@ using namespace std;
 //python3 expander.py main.cpp
 //export CPLUS_INCLUDE_PATH="/home/yantaro/kyopro/ac-library-master"
 
+//https://github.com/yantaro-yanchan/kyopro-library/tree/master/library
+
 using ll = long long;
 using ull = unsigned long long;
 using ld = long double;
