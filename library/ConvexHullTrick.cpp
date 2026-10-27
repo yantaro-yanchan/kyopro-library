@@ -9,7 +9,8 @@ struct ConvexHullTrick {
         return (b.b - c.b) * (b.a - a.a) <= (a.b - b.b) * (c.a - b.a);
     }
     void add(ll a, ll b) {
-        //追加する直線の傾きが単調増加の時末尾に追加削除しかないため、vectorでこのようにできる
+        //最大値→傾きが単調増加 backが最大
+        //最小値→傾きが単調減少 backが最小
         Line l{a, b};
         while(vec.size() > 1 && check(vec[vec.size() - 2], vec.back(), l)) {
             vec.pop_back();
