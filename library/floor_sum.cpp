@@ -13,10 +13,12 @@ for(ll i = 1; i <= n; i++) {
     else break;
 }
 
+//商が√nより大きい部分
 for(ll i = 1; i <= k; i++) {
     ans += ((n / i) - (n / (i + 1))) * i;
 }
 
+//商が√n以下の部分
 for(ll i = 1; i <= n / (k + 1); i++) {
     ans += n / i;
 }
