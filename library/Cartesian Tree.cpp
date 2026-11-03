@@ -15,6 +15,7 @@ void make_tree(vector<int> v) {
             st.pop();
         }
         if(!st.empty()) rc[st.top()] = i;
+        else root = i;
         st.push(i);
     }
     return;
