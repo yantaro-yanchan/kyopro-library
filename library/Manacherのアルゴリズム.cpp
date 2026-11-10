@@ -15,3 +15,16 @@ vector<int> manacher(string &s) {
 
     return res;
 }
+
+
+//回文判定
+auto ispalin = [&](int l, int r) -> bool {
+    int L = 2 * l;
+    int R = 2 * r - 1;
+
+    int mid = (L + R) / 2;
+    int need = (R - L + 1) / 2;
+    
+    if(res[mid] == need) return true;
+    else return false;
+};
